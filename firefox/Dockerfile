@@ -4,6 +4,7 @@ COPY mozillateamppa /etc/apt/preferences.d/mozillateamppa
 RUN apt-get install -y software-properties-common &&  add-apt-repository ppa:mozillateam/ppa && apt update && apt install firefox -y
 RUN apt install -y language-pack-zh-hant language-pack-zh-hans fonts-arphic-*
 RUN apt install -y fcitx fcitx-bin fcitx-config-gtk fcitx-module-dbus fcitx-module-x11 fcitx-googlepinyin
+RUN apt install -y xdotool
 ENV LANG="zh_CN.UTF-8"
 ENV LANGUAGE="zh_CN:zh:en_US:en"
 ENV GTK_IM_MODULE=fcitx
