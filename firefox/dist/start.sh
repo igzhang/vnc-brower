@@ -4,7 +4,7 @@ fcitx
 firefox -P default -display :99 -new-window https://www.poe.com &
 while true; do
     VID=$(xdotool search --onlyvisible firefox)
-    if [ -n "$result" ]; then
+    if [ -n "$VID" ]; then
         echo "find firefox window!"
         break
     fi
